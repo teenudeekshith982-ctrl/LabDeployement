@@ -3,7 +3,7 @@ name: Weather Dashboard
 on:
   push:
     branches:
-      - master   # Change to main if your branch is main
+      - master   
 
 permissions:
   contents: read
