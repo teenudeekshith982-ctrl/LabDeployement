@@ -1,4 +1,4 @@
-name: Deploy Weather Dashboard
+name: Weather Dashboard
 
 on:
   push:
