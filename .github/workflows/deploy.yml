@@ -3,7 +3,7 @@ name: Weather Dashboard
 on:
   push:
     branches:
-      - master
+      - master   # Change to main if your branch is main
 
 permissions:
   contents: read
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 21
+          node-version: 24
           cache: npm
 
       - name: Install Dependencies
