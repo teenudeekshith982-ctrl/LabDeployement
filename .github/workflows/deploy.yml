@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build Angular Application
-        run: npm run build -- --configuration production
+        run: npm run build -- --configuration production --base-href /LabDeployement/
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -36,7 +36,7 @@ jobs:
       - name: Upload Build Files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/your-project-name/browser
+          path: dist/LabDeployement/browser
 
   deploy:
     needs: build
